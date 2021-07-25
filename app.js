@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // Require our routes into the application.
 require('./routes')(app);
 app.get('*', (req, res) => res.status(200).send({
-  message: 'deployed 0',
+  message: 'deployed 1',
 }));
 
 module.exports = app;
